@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Beautiful Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+    <div class="theme-toggle">
+        <label for="theme-switch" class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="calculator-container">
+        <div class="calculator">
+            <input type="text" id="result" disabled>
+            <div class="buttons">
+                <button class="clear">C</button>
+                <button class="operator">/</button>
+                <button class="operator">*</button>
+                <button class="operator">-</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">+</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="equal">=</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>0</button>
+                <button class="decimal">.</button>
+                <!-- Scientific Functions -->
+                <button class="function">sin</button>
+                <button class="function">cos</button>
+                <button class="function">tan</button>
+                <button class="function">log</button>
+                <button class="function">√</button>
+                <button class="memory">M+</button>
+            </div>
+            <div class="history">
+                <h2>History</h2>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
